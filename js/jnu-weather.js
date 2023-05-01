@@ -28,7 +28,7 @@ fetch(apiUrl)
     console.log("상세날씨설명 : " + data.weather[0].description);
     // console.log("날씨 이미지 : " + data.weather[0].icon);
     console.log("바람   : " + data.wind.speed);
-    // console.log("나라   : " + data.sys.country);
-    // console.log("도시이름  : " + data.name);
+    console.log("나라   : " + data.sys.country);
+    console.log("도시이름  : " + data.name);
     console.log("구름  : " + data.clouds.all + "%");
   });
