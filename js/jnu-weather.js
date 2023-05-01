@@ -15,7 +15,7 @@ const chumdanCampus = {
   longitude: "126.56780871743",
 };
 
-const apiKey = "f181229e97e69a787747beeffa6a3a37";
+const apiKey = process.env.OPEN_WEATHER_MAP_API_KEY;
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${araCampus.latitude}&lon=${araCampus.longitude}&appid=${apiKey}`;
 
 fetch(apiUrl)
