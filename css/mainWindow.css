@@ -3,8 +3,7 @@ main {
   }.fullscreen {
     width: fit-content;
     height: fit-content;
-    background-image:  linear-gradient(120deg, red, orange, yellow, green, blue, navy, purple);
-
+    background-color: lightblue;
   }
   .main-container {
     width: fit;
