@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 
-
-
-
-<link rel="stylesheet" href="./css/mainWindow.css">
 <html lang="ko">
 <head>
   <script src = "js/buttonHandler.js"></script>
   <script src = "js/time.js"></script>
-
   <meta charset="UTF-8">
   <title>New Tab</title>
+
+
+  <style type="text/css">
+    #full {
+      width : 800px;
+      height : 600px;
+    }
+
+    #screenLeft {
+      width : 300px;
+      height : 400px;
+      float:inline-end;
+    }
+
+    #screenRight {
+      width : 300px;
+      height : 400px;
+      float:inline-end;
+    }
+  </style>
+
 </head>
 <body class="fullscreen">
   <button id="input">입력하세요</button>
@@ -27,7 +43,10 @@
   column-gap: 48px; row-gap: 24px;">
     <h2 name="texts"> 내용1 </h2> </div>
 
-        <div class="main-container">
+
+        <div class="main-container", id = "fullscreen">
+          
+          
           <div class="temp-box">1</div>
           <div class="temp-box", id = "time">기타 (시간 등)</div>
           <div class="temp-box", id = "results">텍스트가 들어갈 자리(공지 등)</div>
