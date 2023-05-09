@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "제주대 종강알리미",
+    "description": "국립제주대학 종강알리미서비스",
+    "version": "1.0",
+    "permissions": [
+        "tabs"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+      },
+    "action": {
+      "default_popup": "./index.html"
+    }
+    
+  }
