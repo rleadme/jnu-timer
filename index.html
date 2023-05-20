@@ -19,7 +19,28 @@
     <h3 class = "date"></h3>
     <div class = "userDate">
       종강시간을 입력해 주세요.
-      <input type= "text" placeholder="yyyymmddhhmm" maxlength = "12"/>
+      <div class = "dateTime">
+        <!-- <div style = "display: inline-block" class = "years"> 
+          <input style = "width : 30px " type= " text " placeholder="yyyy" maxlength = "4"/>
+          년도
+        </div> -->
+        <div style = "display: inline-block" class = "month"> 
+          <input style = "width : 30px " type= " text " placeholder="mm" maxlength = "2"/>
+          월
+        </div>
+        <div style = "display: inline " class = "days"> 
+          <input style = "width : 30px " type= " text " placeholder="dd" maxlength = "2"/>
+          일
+        </div>
+        <div style = "display: inline " class = "hours"> 
+          <input style = "width : 30px " type= " text " placeholder="hh" maxlength = "2"/>
+          시간
+        </div>
+        <div style = "display: inline " class = "min"> 
+          <input style = "width : 30px " type= " text " placeholder="mm" maxlength = "2"/>
+          분
+        </div>
+      </div>
       <button >종간 시간 입력</button>
       "ex) 2023년 6월 21일 12시 30분 => 202306211230"
     </div>
@@ -47,6 +68,7 @@
     <div class="temp-box">추후 CSS, 아이콘 작업 등 예정</div>
   </div>
   <script src="js/time.js"></script>
+  <script src="./dataGettings.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-/* main {
+main {
     background-image:  linear-gradient(120deg, red, orange, yellow, green, blue, navy, purple);
   }.fullscreen {
     width: fit-content;
@@ -10,7 +10,7 @@
     margin: auto;
     display: grid;
 
-    gap: 10px;  # 자식요소간의 간격 
+     gap: 10px;   /* 자식요소간의 간격  */
   }
   .temp-box {
     background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
@@ -18,8 +18,4 @@
     height: 100%;
     font-size: 40px;
     text-align: center;
-  } */
-
-  .hidden{
-    display : none;
   }
