@@ -3,14 +3,22 @@
     "name": "제주대 종강알리미",
     "description": "국립제주대학 종강알리미서비스",
     "version": "1.0",
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    },
     "permissions": [
         "tabs"
     ],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+
+    },
     "chrome_url_overrides": {
         "newtab": "index.html"
       },
     "action": {
       "default_popup": "./index.html"
     }
-    
+
   }
