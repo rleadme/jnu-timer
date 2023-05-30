@@ -12,26 +12,58 @@
 
 
   <style type="text/css">
-    #full {
-      width : 800px;
-      height : 600px;
-    }
+    
 
-    #screenLeft {
-      width : 300px;
-      height : 400px;
-      float:inline-end;
-    }
+    body{
 
-    #screenRight {
-      width : 300px;
-      height : 400px;
-      float:inline-end;
-    }
+      margin: 0;
+      background-image: url("jejunu.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+  }
+
+  /* header*/
+  header{
+      height : 180px;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      color: black;
+  }
+  .time{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aquamarine;
+
+    color: #000
+  }
+
+          
+
+    .info{
+      width: fit-content;
+      
+      max-height: 70%;
+      height: 240px;
+      border: 3px solid #000;
+      background-color: lightblue;
+      float: left;
+      margin: 4px;
+      box-sizing: border-box;
+
+  }
   </style>
 
 </head>
-<body class="fullscreen">
+<body>
   <button id="input">입력하세요</button>
   <button id="date">날짜설정</button>
   <button id="get">가져오기</button>
@@ -43,21 +75,30 @@
   <input type = "text", id ="textInput", value=" ">
 
 
-  <div style="background-color: lightgray; color:black; text-align: left; box-sizing: inherit;
-  column-gap: 48px; row-gap: 24px;">
-    <h2 name="texts"> 내용1 </h2> </div>
+
+  <h2 style="
+    background-color: azure;
+    height: 80px;
+    align-items: center;
+    align-content: center;
 
 
-        <div class="main-container", id = "fullscreen">
+  ">2000년도 제 2학기 종강까지 남은 시간</h2>
+  <div>
+    
+    <h1 class="time">20일 10시간 50분 02초</h1>
+  </div>
+  
+  
+
+
+        <div class="header">
           
-          
-          <div class="temp-box">1</div>
-          <div class="temp-box", id = "time">기타 (시간 등)</div>
-          <div class="temp-box", id = "info">텍스트가 들어갈 자리(공지 등)</div>
-          <div class="temp-box", id = "results">4</div>
-          <div class="temp-box">추후 CSS, 아이콘 작업 등 예정</div>
-          <div class="temp-box", id = "weather">날씨 서비스</div>
-          <div class="temp-box">6</div>
+          <div class="info", id = "info">텍스트가 들어갈 자리(공지 등)</div>
+          <div class="info", id = "results">4</div>
+          <div class="info">추후 CSS, 아이콘 작업 등 예정</div>
+          <div class="info", id = "weather">날씨 서비스</div>
+          <div class="info">6</div>
 
 
         </div>
