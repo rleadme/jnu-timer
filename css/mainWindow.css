@@ -1,21 +1,54 @@
-main {
-  background-color: aqua;
-}.fullscreen {
-    width: fit-content;
-    height: fit-content;
-    background-color: lightblue;
-  }
-  .main-container {
-    width: fit;
-    margin: auto;
-    display: grid;
+  
+    
 
-    gap: 10px; /* 자식요소간의 간격 */
-  }
-  .temp-box {
-    background-color: cyan;
+  body{
+
+    
+    font-family: 'Jeju Gothic', sans-serif;
+    margin: 0;
+    background-image: url("jejunu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* header*/
+header{
+    height : 180px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+}
+.time{
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+  font-family: 'Jeju Gothic', sans-serif;
+  font: bold;
+  
+
+  color: #000
+}
+
+        
+
+  .info{
     width: fit-content;
-    height: 100%;
-    font-size: 40px;
-    text-align: center;
-  }
+    
+    max-height: 70%;
+    height: 240px;
+    border: 3px solid #000;
+    background-color: lightblue;
+    float: left;
+    margin: 4px;
+    box-sizing: border-box;
+
+}

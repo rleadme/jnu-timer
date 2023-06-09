@@ -1,3 +1,5 @@
+import {crawl} from "./crawl.js";
+
 let data = "";
 
 
@@ -5,6 +7,7 @@ let data = "";
 document.addEventListener('DOMContentLoaded', function() {
 
     var insertBtn = document.getElementById("input");
+    var crawlBtn = document.getElementById("get");
 
     insertBtn.addEventListener("click", function() {
         var resultComponent = document.getElementById("results");
@@ -16,6 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
             resultComponent.innerText = text;
 
     });
+
+
+    crawlBtn.addEventListener("click", function() {
+        var result = document.getElementById("info");
+
+        const text = crawl.crawller();
+
+        result.innerText = text;
+
+    })
 
 
     

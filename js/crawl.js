@@ -3,7 +3,7 @@ import cherrio from "cheerio";
 import iconv from "iconv-lite";
 
 
-
+function crawller() {
 let data = ""
 
 axios({
@@ -38,8 +38,7 @@ axios({
     });
 
 
+    return data;
 
-    
 
-var div=document.getElementById("info"); 
-div.innerText=data;
+}
