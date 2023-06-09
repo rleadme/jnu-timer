@@ -43,10 +43,11 @@ header{
   .info{
     width: fit-content;
     
+    font-family: monospace;
     max-height: 70%;
     height: 240px;
-    border: 3px solid #000;
-    background-color: lightblue;
+    border: 2px solid #000;
+    background-color: rgb(255, 255, 255);
     float: left;
     margin: 4px;
     box-sizing: border-box;
