@@ -18,6 +18,12 @@ const chumdanCampus = {
 const apiKey = "f181229e97e69a787747beeffa6a3a37";
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${araCampus.latitude}&lon=${araCampus.longitude}&appid=${apiKey}`;
 
+getWeather();
+//console.log(getWeather());
+
+function getWeather() {
+
+  let output = "";
 fetch(apiUrl)
   .then((response) => response.json())
   .then((data) => {
@@ -31,4 +37,21 @@ fetch(apiUrl)
     // console.log("나라   : " + data.sys.country);
     // console.log("도시이름  : " + data.name);
     console.log("구름  : " + data.clouds.all + "%");
+
+
+    output += ("현재온도 : " + (data.main.temp - 273.15));
+    output += ("현재습도 : " + data.main.humidity);
+    output += ("날씨 : " + data.weather[0].main);
+    output += ("상세날씨설명 : " + data.weather[0].description);
+    // output += ("날씨 이미지 : " + data.weather[0].icon);
+    output += ("바람   : " + data.wind.speed);
+    // output += ("나라   : " + data.sys.country);
+    // output += ("도시이름  : " + data.name);
+    output += ("구름  : " + data.clouds.all + "%");
+
+
+
+    return output;
   });
+
+}
