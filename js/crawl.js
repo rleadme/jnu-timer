@@ -1,6 +1,9 @@
-import axios from "axios";
-import cherrio from "cheerio";
-import iconv from "iconv-lite";
+
+
+
+import axios from 'https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js';
+import cherrio from 'https://cdnjs.cloudflare.com/ajax/libs/cheerio/0.22.0/lib/cheerio.js';
+import iconv from 'https://cdn.jsdelivr.net/npm/iconv-lite@0.6.3/lib/index.min.js';
 
 
 function crawller() {

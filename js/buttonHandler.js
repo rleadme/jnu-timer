@@ -1,4 +1,4 @@
-import {crawl} from "./crawl.js";
+import crawller from "./crawl.js"
 
 let data = "";
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     crawlBtn.addEventListener("click", function() {
         var result = document.getElementById("info");
 
-        const text = crawl.crawller();
+        const text = crawller();
 
         result.innerText = text;
 
